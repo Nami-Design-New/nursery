@@ -66,8 +66,20 @@
       <label class="form-label"> المدينة : </label>
       <select name="" id="" class="select2">
         <option value="" selected disabled> اختر </option>
-        <option value=""> جدة </option>
-        <option value=""> الرياض </option>
+        <option value="riyadh">الرياض</option>
+        <option value="jeddah">جدة</option>
+        <option value="makkah">مكة المكرمة</option>
+        <option value="medina">المدينة المنورة</option>
+        <option value="dammam">الدمام</option>
+        <option value="taif">الطائف</option>
+        <option value="khobar">الخبر</option>
+        <option value="jubail">الجبيل</option>
+        <option value="tabuk">تبوك</option>
+        <option value="buraidah">بريدة</option>
+        <option value="hail">حائل</option>
+        <option value="abha">أبها</option>
+        <option value="najran">نجران</option>
+        <option value="qassim">القصيم</option>
         <option value=""> اخري </option>
       </select>
     </div>
@@ -128,10 +140,11 @@
     });
 
     // select2
-    $(".select2search").select2();
-    $(".select2").select2({
-      minimumResultsForSearch: -1,
-    });
+    // $(".select2search").select2();
+    $(".select2").select2();
+    // $(".select2").select2({
+    //   // minimumResultsForSearch: -1,
+    // });
   </script>
 
 </body>
