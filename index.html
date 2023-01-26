@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <!-- title -->
+  <title> حضانة </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/logo.png" />
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css" />
+  <!-- Custom style  -->
+  <link rel="stylesheet" id="styleLink" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <header>
+    <nav>
+      <!-- logo -->
+      <a class="logo" href="index.html">
+        <img src="img/logo.png" />
+      </a>
+      <!-- 
+      <div class="dropdown">
+        <img class="icon me-2" src="img/icons/language.svg" alt="">
+        اللغة
+        <div class="dropdown-content">
+          <a href="#!" id="arabicLanguage" class="dropdownItem">
+            <img src="img/flag.svg" alt="">
+            عربي
+          </a>
+          <a href="#!" id="englishLanguage" class="dropdownItem">
+            <img src="img/en_flag.svg" alt="">
+            English
+          </a>
+        </div>
+      </div> -->
+    </nav>
+  </header>
+  <!-- ================ /Header ================= -->
+
+  <form action="">
+    <!-- input -->
+    <div class="inputField">
+      <label class="form-label"> الاسم ثلاثي : </label>
+      <input type="text" class="inputForm" placeholder=" اكتب هنا ... ">
+    </div>
+    <!-- input -->
+    <div class="inputField">
+      <label class="form-label"> تاريخ الميلاد : </label>
+      <input type="date" class="inputForm" placeholder=" اكتب هنا ...">
+    </div>
+    <!-- input -->
+    <div class="inputField">
+      <label class="form-label"> البريد الالكتروني : </label>
+      <input type="email" class="inputForm" placeholder=" مثال : mail@mail.com ">
+    </div>
+
+    <!-- input -->
+    <div class="inputField">
+      <label class="form-label"> المدينة : </label>
+      <select name="" id="" class="select2">
+        <option value="" selected disabled> اختر </option>
+        <option value=""> جدة </option>
+        <option value=""> الرياض </option>
+        <option value=""> اخري </option>
+      </select>
+    </div>
+    <button type="button" class="btn reserve"> ارسال </button>
+  </form>
+
+  <!-- modal -->
+  <div class="modal">
+    <span class="modalBG"></span>
+    <div class="modalContent">
+      <span class="closeModal">&times;</span>
+      <h5>
+        خصوصيتك وخصوصية اسرتك ملك لك , لا تشارك المعلومات أو البيانات الشخصية مع احد بدون ما تتأكد منه .
+      </h5>
+      <h6>
+        ها المرة عدت سليمة لأن احنا جهة موثوقة . واطمئن بياناتك اللي شاركتها في الرابط كانت مجرد صفحة لاختبار وهي غير
+        محفوظة فيه .
+      </h6>
+      <p>
+        مع تحيات الهيئة السعودية للبيانات و الذكاء الاصطناعي .
+
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ================ Footer ================= -->
+  <footer>
+    كل الحقوق محفوظة
+    <a class="company" href="#!" target="_blank">
+      حضانة المستقبل
+    </a>
+    <script>
+      document.write(new Date().getFullYear())
+    </script>
+    &copy;
+  </footer>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!-- jquery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- apper -->
+  <script src="js/jquery.appear.js"></script>
+  <!-- select2  -->
+  <script src="js/select2.min.js"></script>
+  <!-- custom -->
+  <script>
+
+    $(".modal").hide();
+    $(document).on("click", ".reserve , .closeModal", function () {
+      $(".modal").toggleClass("showModal");
+    });
+
+    // select2
+    $(".select2search").select2();
+    $(".select2").select2({
+      minimumResultsForSearch: -1,
+    });
+  </script>
+
+</body>
+
+</html>
