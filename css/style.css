@@ -536,6 +536,7 @@ header .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100% !important;
 }
 .inputField label {
   color: var(--textColor);
@@ -565,6 +566,7 @@ header .dropdown:hover .dropdown-content {
   border-radius: 4px;
   padding: 0 10px;
   min-width: 100px;
+  width: 100% !important;
 }
 
 textarea.inputForm {
