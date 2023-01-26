@@ -672,6 +672,39 @@ form{
   gap: 16px;
 
 }
+
+.odometer-inside {
+  direction: ltr !important;
+}
+
+.statistics{
+  width: min(100% - 30px , 800px);
+  margin:  auto;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--whiteColor);
+  box-shadow: var(--BigShadow);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  .statistic{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 200px;
+    flex: 1;
+    text-align: center;
+    padding: 24px;
+    h1{
+      font-weight: bold;
+      font-size: 40px;
+      color: var(--mainColor);
+    }
+
+  }
+}
+
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
